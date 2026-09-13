@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>INFINITY - Study Batches</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: white;
+      text-shadow:
+        0 0 10px #ff003c,
+        0 0 25px #8a00ff;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1100px;
+      margin: auto;
+      padding-bottom: 50px;
+    }
+
+    .batches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .batch-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(120,0,255,0.15);
+      transition: 0.3s;
+    }
+
+    .batch-card:hover {
+      transform: translateY(-7px);
+      box-shadow:
+        0 0 25px rgba(255,0,60,0.25),
+        0 0 35px rgba(130,0,255,0.2);
+    }
+
+    .batch-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 13px;
+      display: block;
+    }
+
+    .get-btn {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      padding: 13px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #ff003c, #8a00ff);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .get-btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(255,0,100,0.5);
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .batches {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>INFINITY</h1>
+    <p>Study Batches</p>
+  </header>
+
+  <main class="container">
+
+    <div class="batches">
+
+      <!-- BATCH 1 -->
+      <div class="batch-card">
+        <img src="https://via.placeholder.com/800x450" alt="Study Batch">
+        <a
+          href="https://example.com"
+          target="_blank"
+          class="get-btn">
+          Get Batch
+        </a>
+      </div>
+
+      <!-- BATCH 2 -->
+      <div class="batch-card">
+        <img src="https://via.placeholder.com/800x450" alt="Study Batch">
+        <a
+          href="https://example.com"
+          target="_blank"
+          class="get-btn">
+          Get Batch
+        </a>
+      </div>
+
+      <!-- BATCH 3 -->
+      <div class="batch-card">
+        <img src="https://via.placeholder.com/800x450" alt="Study Batch">
+        <a
+          href="https://example.com"
+          target="_blank"
+          class="get-btn">
+          Get Batch
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 INFINITY
+  </footer>
+
+</body>
+  </html>
